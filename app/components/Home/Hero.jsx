@@ -6,8 +6,8 @@ import heroImage1 from '../../assets/home/hero1.svg'
 
 const Hero = () => {
   return (
-    <section className="bg-white ">
-      <div className="px-4 py-8 sm:px-6 md:px-10 sm:py-10 md:py-20 max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
+    <section className="bg-white px-4 py-8 sm:px-6 md:px-10 sm:py-10 md:py-20 ">
+      <div className="max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
 
         <div className="flex-1 lg:max-w-[608px]">
           <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
