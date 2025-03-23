@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-white px-3 sm:px-6 py-4">
-      <div className="max-w-screen-[1232px] mx-auto flex items-center justify-between">
+      <div className="max-w-[1232px] mx-auto flex items-center justify-between">
         <div className="text-2xl font-bold text-[#333333]">Propoke</div>
 
         <div className='flex items-center gap-6'>

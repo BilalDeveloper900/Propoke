@@ -2,21 +2,21 @@
 import Image from 'next/image';
 import { FiSearch } from 'react-icons/fi';
 import heroImage from '../../assets/home/hero.svg'
+import heroImage1 from '../../assets/home/hero1.svg'
 
 const Hero = () => {
   return (
-    <section className="bg-white px-6 py-12 md:py-20">
-      <div className="max-w-screen-xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-        
-        {/* Left Content */}
-        <div className="flex-1">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Bring Your Family&apos;s <br />
-            Happiness to Your <br />
+    <section className="bg-white px-4 py-8 sm:px-6 md:px-10 sm:py-10 md:py-20">
+      <div className="max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
+
+        <div className="flex-1 lg:max-w-[608px]">
+          <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
+            Bring Your Family&apos;s  
+            Happiness to Your 
             Dream House
           </h1>
 
-          <p className="mt-6 text-gray-600 text-base md:text-lg">
+          <p className="mt-2 sm:mt-4 text-[#666666] text-base leading-[32px]">
             Finding the perfect home isn’t just about bricks and mortar—it’s about
             creating a space where your family can grow, laugh, and make lasting
             memories. Your dream house is more than just a place to live; it’s
@@ -24,46 +24,50 @@ const Hero = () => {
             comfort meets love.
           </p>
 
-          {/* Search Bar */}
-          <div className="mt-8">
-            <div className="flex items-center bg-white border rounded-full shadow-md px-4 py-2 w-full max-w-md">
-              <FiSearch className="text-gray-400 text-lg" />
+          <div className=" mt-6 sm:mt-[40px]">
+            <div className="flex items-center bg-[#FAFAFA] rounded-full pl-4 p-2 w-full md:max-w-[608px]">
+              <FiSearch className="text-[#666666] text-lg" fontSize={16} />
               <input
                 type="text"
                 placeholder="Search Here"
-                className="flex-grow px-4 py-2 outline-none text-sm bg-transparent"
+                className="flex-grow pl-2 px-4 py-2 outline-none text-sm bg-transparent"
               />
-              <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full text-sm font-medium">
+              <button className="bg-[#3854B5] hover:bg-[#3853b5ce] text-white w-[130px] h-[48px] flex justify-center items-center rounded-full font-semibold">
                 Search
               </button>
             </div>
           </div>
 
-          {/* Stats */}
-          <div className="mt-10 grid grid-cols-3 gap-4 max-w-md">
+          <div className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">
             <div>
-              <p className="text-xl font-semibold">300+</p>
-              <span className="text-sm text-gray-600">Awards Winning</span>
+              <p className="text-[32px] font-bold">300+</p>
+              <span className="text-sm text-[#666666]">Awards Winning</span>
             </div>
             <div>
-              <p className="text-xl font-semibold">80+</p>
-              <span className="text-sm text-gray-600">Property Ready</span>
+              <p className="text-[32px] font-bold">80+</p>
+              <span className="text-sm text-[#666666]">Property Ready</span>
             </div>
             <div>
-              <p className="text-xl font-semibold">450+</p>
-              <span className="text-sm text-gray-600">Happy Customers</span>
+              <p className="text-[32px] font-bold">450+</p>
+              <span className="text-sm text-[#666666]">Happy Customers</span>
             </div>
           </div>
         </div>
 
-        {/* Right Image */}
-        <div className="flex-1">
+        <div className="hidden md:flex">
           <Image
-            src={heroImage} 
+            src={heroImage}
             alt="Modern House"
-            width={448}
-            height={520}
-            className="rounded-[16px] object-cover object-center"
+            className="rounded-[16px] w-full md:w-[448px] h-[520] object-cover"
+            priority
+          />
+        </div>
+
+        <div className="flex md:hidden">
+          <Image
+            src={heroImage1}
+            alt="Modern House"
+            className="rounded-[16px] w-full h-[520] object-cover"
             priority
           />
         </div>
