@@ -37,7 +37,7 @@ const StepsToBuy = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1136px] mx-auto">
         {steps.map((step, index) => (
-          <div key={index}>
+          <div key={index} className="">
             <div className="w-[56px] h-[56px] rounded-full bg-black text-white font-bold text-center flex items-center justify-center mb-4">
               {step.number}
             </div>

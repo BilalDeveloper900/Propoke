@@ -20,51 +20,46 @@ const features = [
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-white py-20 px-6">
-      <div className="max-w-[1136px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left: Text & Cards */}
-        <div>
+    <section className="bg-white py-10 px-4 sm:px-6 lg:px-0">
+      <div className="max-w-[1136px] mx-auto flex justify-between items-center">
+        <div className='lg:max-w-[560px]'>
           <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4">
             Why Choose Us for Your House Needs?
           </h2>
-          <p className="text-[#666666] text-base mb-8">
+          <p className="text-[#666666] text-base leading-[32px]">
             At Propoke Real Estate, we make finding your dream home easy, transparent, and hassle-free. Whether you're buying, selling, or investing, we provide expert guidance and high-quality listings to match your needs.
           </p>
 
           {/* Feature Cards */}
-          <div className="space-y-5">
+          <div className="mt-10">
             {features.map((feature, index) => (
-              <div key={index} className="flex gap-4 p-5 bg-white rounded-xl shadow-sm border border-gray-100 items-start">
-                <div className="text-blue-600 text-xl mt-1">
-                  <BsCheckCircleFill />
+              <div key={index} className="flex p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
+                <div className=" mr-4" >
+                  <BsCheckCircleFill className='' color='black' fontSize={40} />
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-1">{feature.title}</h3>
-                  <p className="text-sm text-gray-600">{feature.desc}</p>
+                  <h3 className="text-[32px] font-bold text-[#333333] leading-[48px]">{feature.title}</h3>
+                  <p className="text-[#666666] text-base leading-[32px]">{feature.desc}</p>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* Right: Image Stack */}
-        <div className="relative w-full h-full flex justify-center">
+        <div className="relative justify-center hidden lg:flex">
           <div className="w-[90%] rounded-xl overflow-hidden shadow-lg">
             <Image
               src={whyus2}
               alt="Main Image"
-              width={600}
-              height={400}
-              className="rounded-xl object-cover w-full h-auto"
+              style={{ width: '456px', height: '720px' ,objectFit: 'cover'}}
+              className="rounded-xl object-cover !w-[456px] !h-[720px]"
             />
           </div>
-          <div className="absolute bottom-[-40px] left-10 w-[180px] h-auto rounded-xl overflow-hidden border-4 border-white shadow-lg">
+          <div className="absolute left-[-40px] bottom-10 w-[180px] h-auto rounded-[16px] overflow-hidden">
             <Image
               src={whyus1}
               alt="Secondary Image"
-              width={200}
-              height={150}
-              className="rounded-xl object-cover"
+              className="rounded-xl object-cover w-[240px] h-[240px]"
             />
           </div>
         </div>
