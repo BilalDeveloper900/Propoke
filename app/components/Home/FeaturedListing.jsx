@@ -48,7 +48,7 @@ const FeaturedListing = () => {
     return (
         <div className='max-w-[1136px] mx-auto px-4 pb-8 sm:px-6 md:px-10 lg:px-0 sm:pb-10 md:pb-20'>
             <div className="flex flex-col sm:flex-row justify-between">
-                <h2 className="text-[32px] md:text-[40px] font-bold text-gray-900 ">
+                <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333]">
                     Featured Listing
                 </h2>
 
