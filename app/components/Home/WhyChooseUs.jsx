@@ -24,10 +24,10 @@ const WhyChooseUs = () => {
       <div className="max-w-[1136px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         {/* Left: Text & Cards */}
         <div>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4">
             Why Choose Us for Your House Needs?
           </h2>
-          <p className="text-gray-600 mb-8 max-w-2xl">
+          <p className="text-[#666666] text-base mb-8">
             At Propoke Real Estate, we make finding your dream home easy, transparent, and hassle-free. Whether you're buying, selling, or investing, we provide expert guidance and high-quality listings to match your needs.
           </p>
 
