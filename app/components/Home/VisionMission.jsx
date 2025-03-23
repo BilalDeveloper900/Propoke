@@ -7,12 +7,12 @@ const VisionMission = () => {
     <section className="bg-[#FAFAFA] pb-[48px] px-4 sm:px-10 lg:px-0 ">
 
       <div className='max-w-[1136px] mx-auto pt-4 pb-5'>
-        <div className='flex justify-between items-center'>
-          <div className='text-[#666666]'>
+        <div className='flex flex-col sm:flex-row justify-between items-center'>
+          <div className='text-[#666666] text-base leading-[32px]'>
             Find the home that fits your lifestyle. Browse our featured listings today! 🏠✨
           </div>
 
-          <span className='w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
+          <span className='w-full mt-2 sm:mt-0 sm:w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
             See More
           </span>
         </div>

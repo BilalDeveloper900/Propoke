@@ -33,15 +33,15 @@ const testimonials = [
 
 const settings = {
     infinite: true,
-    speed: 5000,             
+    speed: 5000,
     autoplay: true,
-    autoplaySpeed: 0,         
-    cssEase: "linear",         
-    slidesToShow: 3,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
     pauseOnHover: true,
-    swipe: false,              
+    swipe: false,
     draggable: false,
     responsive: [
         {
@@ -58,34 +58,37 @@ const settings = {
 
 export default function TestimonialSlider() {
     return (
-        <div className="py-12 px-4 bg-white">
+        <div className="max-w-[1136px] mx-auto px-4 pb-8 sm:px-6 lg:px-0 bg-white">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl font-bold text-gray-800 mb-2">What Says from Our Happy Customers</h2>
-                <p className="text-gray-500 mb-8 max-w-xl">
+                <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] ">What Says from Our Happy Customers</h2>
+                <p className="text-[#666666] text-base leading-[32px]">
                     Don’t just take our word for it—hear from our satisfied clients who found their dream homes with Propoke!
                 </p>
-                <Slider {...settings}>
-                    {testimonials.map((t, index) => (
-                        <div key={index} className="px-4">
-                            <div className="bg-white shadow-md rounded-lg p-6 h-full">
-                                <p className="text-gray-700 mb-6">"{t.text}"</p>
-                                <div className="flex items-center">
-                                    <Image
-                                        src={t.image}
-                                        alt={t.name}
-                                        width={40}
-                                        height={40}
-                                        className="rounded-full object-cover"
-                                    />
-                                    <div className="ml-3">
-                                        <p className="font-semibold text-gray-800">{t.name}</p>
-                                        <p className="text-gray-500 text-sm">{t.title}</p>
+
+                <div className='py-20'>
+                    <Slider {...settings}>
+                        {testimonials.map((t, index) => (
+                            <div key={index} className="px-4">
+                                <div className="bg-white hover:shadow-md rounded-lg p-4 h-[232px]">
+                                    <p className="text-[#666666] text-base leading-[32px]">"{t.text}"</p>
+                                    <div className="flex items-center mt-4">
+                                        <Image
+                                            src={t.image}
+                                            alt={t.name}
+                                            width={40}
+                                            height={40}
+                                            className="rounded-full object-cover"
+                                        />
+                                        <div className="ml-3">
+                                            <p className="font-semibold text-gray-800">{t.name}</p>
+                                            <p className="text-gray-500 text-sm">{t.title}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    ))}
-                </Slider>
+                        ))}
+                    </Slider>
+                </div>
             </div>
         </div>
     );
