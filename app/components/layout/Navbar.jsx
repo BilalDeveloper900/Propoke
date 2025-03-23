@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="text-2xl font-bold text-[#333333]">Propoke</div>
 
         <div className='flex items-center gap-6'>
-          <nav className="hidden md:flex space-x-6 items-center text-sm font-normal text-[#666666]">
+          <nav className="hidden lg:flex space-x-6 items-center text-sm font-normal text-[#666666]">
             <Link href="/">Home</Link>
 
             <div className="relative">
@@ -80,14 +80,14 @@ const Navbar = () => {
             </div>
           </nav>
 
-          <div className="space-x-3 hidden md:flex">
+          <div className="space-x-3 hidden lg:flex">
             <Link href="/stay" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Stay With Us</Link>
             <Link href="/host" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Host With Us</Link>
             <Link href="/booking" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
           </div>
         </div>
 
-        <div className='flex items-center gap-6 md:hidden'>
+        <div className='flex items-center gap-6 lg:hidden'>
           <button className="text-2xl" onClick={toggleMobileMenu}>
             {mobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
@@ -97,7 +97,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`md:hidden transition-all duration-500 overflow-hidden ${mobileMenuOpen ? 'max-h-[999px]' : 'max-h-0'
+        className={`lg:hidden transition-all duration-500 overflow-hidden ${mobileMenuOpen ? 'max-h-[999px]' : 'max-h-0'
           }`}
       >
         <div className="px-6 space-y-2 pt-4 pb-6 text-gray-700 text-sm font-medium">

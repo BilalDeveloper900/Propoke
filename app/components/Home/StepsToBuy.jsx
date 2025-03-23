@@ -24,7 +24,7 @@ const steps = [
   const StepsToBuy = () => {
     return (
       <section className="bg-[#0a0a0a] text-white px-6 py-20">
-        <div className="max-w-screen-xl mx-auto text-center mb-12">
+        <div className="max-w-[1136px] mx-auto text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Easy Step to Buy Property on Propoke Real Estate
           </h2>
@@ -34,7 +34,7 @@ const steps = [
           </p>
         </div>
   
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-screen-xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-[1136px] mx-auto">
           {steps.map((step, index) => (
             <div key={index}>
               <div className="w-10 h-10 rounded-full bg-white text-black font-bold text-center flex items-center justify-center mb-4">

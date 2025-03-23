@@ -5,7 +5,7 @@ import mission from '../../assets/home/mission.svg';
 const VisionMission = () => {
   return (
     <section className="bg-[#f9f9f9] px-6 py-16">
-      <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+      <div className="max-w-[1136px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
         
         {/* Left: Vision */}
         <div>

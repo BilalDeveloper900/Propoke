@@ -6,7 +6,7 @@ import list1 from '../../assets/home/list1.svg'
 import list2 from '../../assets/home/list2.svg'
 import list3 from '../../assets/home/list3.svg'
 import list4 from '../../assets/home/list4.svg'
-
+import { RiSendPlaneLine } from "react-icons/ri";
 
 const listings = [
     {
@@ -46,16 +46,13 @@ const listings = [
 
 const FeaturedListing = () => {
     return (
-        <div>
-            <div className="max-w-screen-xl mx-auto px-6 py-10 md:py-14 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-
-                {/* Left Heading */}
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 whitespace-nowrap">
+        <div className='max-w-[1136px] mx-auto px-4 pb-8 sm:px-6 md:px-10 lg:px-0 sm:pb-10 md:pb-20'>
+            <div className="flex flex-col sm:flex-row justify-between">
+                <h2 className="text-[32px] md:text-[40px] font-bold text-gray-900 ">
                     Featured Listing
                 </h2>
 
-                {/* Right Paragraph */}
-                <p className="text-gray-600 text-base max-w-3xl leading-relaxed">
+                <p className="text-[#666666] text-base sm:w-[324px] md:w-[560px] leading-[32px]">
                     Discover our top featured properties, carefully selected to offer the best in
                     comfort, location, and design. Whether you're searching for a modern city apartment,
                     a spacious family home, or a luxurious villa, these exclusive listings provide the
@@ -65,8 +62,8 @@ const FeaturedListing = () => {
             </div>
 
 
-            <section className="bg-white py-12 px-6">
-                <div className="max-w-screen-xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <section className="bg-white mt-6 sm:mt-10 md:mt-[66px]">
+                <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                     {listings.map((item, index) => (
                         <ListingCard key={index} {...item} />
                     ))}
@@ -80,37 +77,35 @@ const FeaturedListing = () => {
 
 const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
     return (
-        <div className="rounded-xl overflow-hidden shadow-sm max-w-xs bg-white">
+        <div className="rounded-xl overflow-hidden max-w-xs bg-white">
             <div className="relative">
                 <Image
                     src={image}
                     alt={title}
-                    width={400}
-                    height={280}
                     className="rounded-xl object-cover h-60 w-full"
                 />
-                <span className="absolute top-4 left-4 bg-gray-800 text-white text-sm font-semibold px-3 py-1 rounded-full shadow">
+                <span className="absolute top-4 left-4 bg-gray-800 text-white text-sm font-semibold w-[111px] h-[40px] flex justify-center items-center rounded-full shadow">
                     ${price},-
                 </span>
             </div>
 
-            <div className="px-3 py-4">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{title}</h3>
+            <div className="">
+                <h3 className="text-[32px] font-semibold text-[#333333] my-3 leading-[48px]">{title}</h3>
 
-                <div className="flex items-center text-sm text-gray-600 space-x-4 mb-1">
+                <div className="flex items-center text-sm text-gray-600 space-x-4">
                     <div className="flex items-center gap-1">
-                        <FiMapPin className="text-gray-700" />
-                        <span>{location}</span>
+                    <RiSendPlaneLine />
+                        <span className='text-[#666666]'>{location}</span>
                     </div>
                     <div className="flex items-center gap-1">
                         <PiBedLight className="text-gray-700" />
-                        <span>{bedrooms} Bedroom</span>
+                        <span className='text-[#666666]'>{bedrooms} Bedroom</span>
                     </div>
                 </div>
 
-                <div className="mt-2 flex items-center justify-between">
+                <div className="mt-3 flex items-center space-x-4">
                     <p className="text-sm text-gray-400 line-through">${oldPrice}/night</p>
-                    <button className="bg-blue-600 text-white px-4 py-2 rounded-full text-sm hover:bg-blue-700 transition">
+                    <button className="bg-[#3854B5] text-white w-[105px] cursor-pointer h-[32px] rounded-full text-sm hover:bg-[#3853b5d7] transition">
                         Book Now
                     </button>
                 </div>
