@@ -4,7 +4,7 @@ import mission from '../../assets/home/mission.svg';
 
 const VisionMission = () => {
   return (
-    <section className="bg-[#FAFAFA] pb-[48px] px-6 sm:px-10 lg:px-0 ">
+    <section className="bg-[#FAFAFA] pb-[48px] px-4 sm:px-10 lg:px-0 ">
 
       <div className='max-w-[1136px] mx-auto pt-4 pb-5'>
         <div className='flex justify-between items-center'>
