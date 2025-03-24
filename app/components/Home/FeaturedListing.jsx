@@ -48,11 +48,11 @@ const FeaturedListing = () => {
     return (
         <div className='max-w-[1136px] mx-auto px-4 pb-8 sm:px-6 md:px-10 lg:px-0 sm:pb-10 md:pb-20'>
             <div className="flex flex-col sm:flex-row justify-between">
-                <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333]">
+                <h2 data-aos="zoom-in" className="text-[32px] md:text-[40px] font-bold text-[#333333]">
                     Featured Listing
                 </h2>
 
-                <p className="text-[#666666] text-base sm:w-[324px] md:w-[560px] leading-[32px]">
+                <p data-aos="zoom-in" className="text-[#666666] text-base sm:w-[324px] md:w-[560px] leading-[32px]">
                     Discover our top featured properties, carefully selected to offer the best in
                     comfort, location, and design. Whether you're searching for a modern city apartment,
                     a spacious family home, or a luxurious villa, these exclusive listings provide the
@@ -78,7 +78,7 @@ const FeaturedListing = () => {
 const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
     return (
         <div className="rounded-xl overflow-hidden max-w-xs bg-white">
-            <div className="relative">
+            <div data-aos="zoom-in" className="relative">
                 <Image
                     src={image}
                     alt={title}
@@ -89,7 +89,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
                 </span>
             </div>
 
-            <div className="">
+            <div data-aos="zoom-in" className="">
                 <h3 className="text-[32px] font-semibold text-[#333333] my-3 leading-[48px]">{title}</h3>
 
                 <div className="flex items-center text-sm text-gray-600 space-x-4">

@@ -3,13 +3,17 @@ import Image from 'next/image';
 import { FiSearch } from 'react-icons/fi';
 import heroImage from '../../assets/home/hero.svg'
 import heroImage1 from '../../assets/home/hero1.svg'
+import CountUp from 'react-countup';
+import { useInView } from 'react-intersection-observer';
 
 const Hero = () => {
+  const { ref, inView } = useInView({ triggerOnce: true });
+
   return (
     <section className="bg-white px-4 py-8 sm:px-6 md:px-10 sm:py-10 md:py-20 ">
       <div className="max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
 
-        <div className="flex-1 lg:max-w-[608px]">
+        <div data-aos="zoom-in" className="flex-1 lg:max-w-[608px]">
           <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
             Bring Your Family&apos;s  
             Happiness to Your 
@@ -38,23 +42,23 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">
+          <div ref={ref} className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">
             <div>
-              <p className="text-[32px] font-bold">300+</p>
+              <p className="text-[32px] font-bold">{inView && <CountUp end={300} duration={4} />}+</p>
               <span className="text-sm text-[#666666]">Awards Winning</span>
             </div>
             <div>
-              <p className="text-[32px] font-bold">80+</p>
+              <p className="text-[32px] font-bold">{inView && <CountUp end={80} duration={4} />}+</p>
               <span className="text-sm text-[#666666]">Property Ready</span>
             </div>
             <div>
-              <p className="text-[32px] font-bold">450+</p>
+              <p className="text-[32px] font-bold">{inView && <CountUp end={450} duration={4.5} />}+</p>
               <span className="text-sm text-[#666666]">Happy Customers</span>
             </div>
           </div>
         </div>
 
-        <div className="hidden md:flex">
+        <div data-aos="zoom-in" className="hidden md:flex">
           <Image
             src={heroImage}
             alt="Modern House"

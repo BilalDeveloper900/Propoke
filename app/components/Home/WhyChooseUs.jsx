@@ -33,7 +33,7 @@ const WhyChooseUs = () => {
           {/* Feature Cards */}
           <div className="mt-10">
             {features.map((feature, index) => (
-              <div key={index} className="flex flex-col sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
+              <div key={index} data-aos="zoom-in" className="flex flex-col sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
                 <div className=" mr-4 mb-4 mt-4 sm:mt-0" >
                   <BsCheckCircleFill className='' color='black' fontSize={40} />
                 </div>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div className="relative justify-center hidden lg:flex">
+        <div data-aos="zoom-in"  className="relative justify-center hidden lg:flex">
           <div className="w-[90%] rounded-xl overflow-hidden shadow-lg">
             <Image
               src={whyus2}

@@ -9,7 +9,7 @@ export default function HomeCtaSection() {
     <section className=" py-20 px-4">
       <div className="max-w-[1136px] mx-auto flex flex-col md:flex-row items-center gap-10">
 
-        <div className="flex sm:hidden lg:flex">
+        <div data-aos="zoom-in" className="flex sm:hidden lg:flex">
           <Image
             src={case1}
             alt="Real Estate Agent"
@@ -17,7 +17,7 @@ export default function HomeCtaSection() {
           />
         </div>
 
-        <div className="w-full lg:w-1/2">
+        <div data-aos="zoom-in" className="w-full lg:w-1/2">
           <h2 className="text-[32px] sm:text-[40px] md:text-[56px] font-bold text-[#333333] mb-4">
             Let's Move to Your Dream Family Home
           </h2>

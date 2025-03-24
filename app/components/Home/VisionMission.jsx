@@ -6,7 +6,7 @@ const VisionMission = () => {
   return (
     <section className="bg-[#FAFAFA] pb-[48px] px-4 sm:px-10 lg:px-0 ">
 
-      <div className='max-w-[1136px] mx-auto pt-4 pb-5'>
+      <div data-aos="zoom-in"  className='max-w-[1136px] mx-auto pt-4 pb-5'>
         <div className='flex flex-col sm:flex-row justify-between items-center'>
           <div className='text-[#666666] text-base leading-[32px]'>
             Find the home that fits your lifestyle. Browse our featured listings today! 🏠✨
@@ -18,8 +18,8 @@ const VisionMission = () => {
         </div>
       </div>
 
-      <div className="max-w-[1136px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:gap-12 items-start ">
-        <div className='sm:px-6 lg:px-10'>
+      <div  className="max-w-[1136px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:gap-12 items-start ">
+        <div data-aos="zoom-in"  className='sm:px-6 lg:px-10'>
           <h2 className="text-[32px] font-bold text-[#333333] mb-4">Our Vision</h2>
 
           <Image
@@ -47,7 +47,7 @@ const VisionMission = () => {
           />
         </div>
 
-        <div className="flex  sm:px-6 lg:px-10 flex-col justify-between h-full">
+        <div data-aos="zoom-in"  className="flex  sm:px-6 lg:px-10 flex-col justify-between h-full">
           <Image
             src={mission}
             alt="Mission"
