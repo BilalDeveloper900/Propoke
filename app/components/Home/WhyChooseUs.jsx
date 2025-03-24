@@ -33,8 +33,8 @@ const WhyChooseUs = () => {
           {/* Feature Cards */}
           <div className="mt-10">
             {features.map((feature, index) => (
-              <div key={index} className="flex p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
-                <div className=" mr-4" >
+              <div key={index} className="flex flex-col sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
+                <div className=" mr-4 mb-4 mt-4 sm:mt-0" >
                   <BsCheckCircleFill className='' color='black' fontSize={40} />
                 </div>
                 <div>
