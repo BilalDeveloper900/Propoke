@@ -30,7 +30,7 @@ const Hero = () => {
               <input
                 type="text"
                 placeholder="Search Here"
-                className="flex-grow pl-2 px-4 py-2 outline-none text-sm bg-transparent"
+                className="flex-grow pl-2 px-4 py-2 outline-none text-sm w-full bg-transparent"
               />
               <button className="bg-[#3854B5] hover:bg-[#3853b5ce] text-white w-[120px] sm:w-[130px] h-[48px] flex justify-center items-center rounded-full font-semibold">
                 Search

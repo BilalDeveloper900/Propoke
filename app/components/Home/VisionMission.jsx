@@ -12,7 +12,7 @@ const VisionMission = () => {
             Find the home that fits your lifestyle. Browse our featured listings today! 🏠✨
           </div>
 
-          <span className='w-full mt-2 sm:mt-0 sm:w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
+          <span className='w-full  cursor-pointer mt-2 sm:mt-0 sm:w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
             See More
           </span>
         </div>

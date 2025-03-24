@@ -55,7 +55,7 @@ const StepsToBuy = () => {
             Have questions about buying or selling a property with Propoke Real Estate? Check out our Frequently Asked Questions (FAQ).
           </div>
 
-          <span className=' w-full mt-2 sm:mt-0 sm:w-[175px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
+          <span className=' w-full  cursor-pointer mt-2 sm:mt-0 sm:w-[175px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
             See Our FAQ
           </span>
         </div>

@@ -25,7 +25,7 @@ export default function HomeCtaSection() {
             Finding the perfect home for your family is a journey filled with excitement, and Propoke Real Estate is here to make it effortless. Whether you're looking for a spacious home, a cozy retreat, or a vibrant neighborhood, we'll help you find the perfect place where memories are made.
           </p>
 
-          <button className="bg-[#3854B5] hover:bg-[#3853b5dc] text-white font-semibold w-full sm:w-[179px] h-[40px] flex justify-center items-center rounded-full mb-6">
+          <button className="bg-[#3854B5] cursor-pointer hover:bg-[#3853b5dc] text-white font-semibold w-full sm:w-[179px] h-[40px] flex justify-center items-center rounded-full mb-6">
             Booking Now
           </button>
 
