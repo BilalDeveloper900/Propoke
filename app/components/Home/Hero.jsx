@@ -1,4 +1,5 @@
 
+"use client";
 import Image from 'next/image';
 import { FiSearch } from 'react-icons/fi';
 import heroImage from '../../assets/home/hero.svg'
