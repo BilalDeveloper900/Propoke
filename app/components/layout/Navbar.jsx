@@ -37,12 +37,12 @@ const Navbar = () => {
                 className={`absolute bg-white shadow-md rounded p-4 top-full mt-2 min-w-[150px] z-10 transition-all duration-500 overflow-hidden ${openDropdown === 'listing' ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
               >
-                <Link href="/listing/apartments" className="block py-1">Apartments</Link>
-                <Link href="/listing/villas" className="block py-1">Villas</Link>
+                <Link href="/coming-soon" className="block py-1">Apartments</Link>
+                <Link href="/coming-soon" className="block py-1">Villas</Link>
               </div>
             </div>
 
-            <Link href="/services">Services</Link>
+            <Link href="/coming-soon">Services</Link>
 
             <div className="relative">
               <button
@@ -55,13 +55,13 @@ const Navbar = () => {
                 className={`absolute bg-white shadow-md rounded p-4 top-full mt-2 min-w-[150px] z-10 transition-all duration-500 overflow-hidden ${openDropdown === 'blog' ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
               >
-                <Link href="/blog/news" className="block py-1">News</Link>
-                <Link href="/blog/tips" className="block py-1">Tips</Link>
+                <Link href="/coming-soon" className="block py-1">News</Link>
+                <Link href="/coming-soon" className="block py-1">Tips</Link>
               </div>
             </div>
 
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact Us</Link>
+            <Link href="/coming-soon">About</Link>
+            <Link href="/coming-soon">Contact Us</Link>
 
             <div className="relative">
               <button
@@ -74,16 +74,16 @@ const Navbar = () => {
                 className={`absolute bg-white shadow-md rounded p-4 top-full mt-2 min-w-[150px] z-10 transition-all duration-500 overflow-hidden ${openDropdown === 'pages' ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
                   }`}
               >
-                <Link href="/faq" className="block py-1">FAQ</Link>
-                <Link href="/team" className="block py-1">Team</Link>
+                <Link href="/coming-soon" className="block py-1">FAQ</Link>
+                <Link href="/coming-soon" className="block py-1">Team</Link>
               </div>
             </div>
           </nav>
 
           <div className="space-x-3 hidden lg:flex">
-            <Link href="/stay" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Stay With Us</Link>
-            <Link href="/host" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Host With Us</Link>
-            <Link href="/booking" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
+            <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Stay With Us</Link>
+            <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Host With Us</Link>
+            <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
           </div>
         </div>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
             {mobileMenuOpen ? <FiX /> : <FiMenu />}
           </button>
 
-          <Link href="/booking" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
+          <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
         </div>
       </div>
 
@@ -117,13 +117,13 @@ const Navbar = () => {
               className={`ml-4 transition-all duration-500 overflow-hidden ${openDropdown === 'listing' ? 'max-h-[200px]' : 'max-h-0'
                 }`}
             >
-              <Link href="/listing/apartments" className="block py-1">Apartments</Link>
-              <Link href="/listing/villas" className="block py-1">Villas</Link>
+              <Link href="/coming-soon" className="block py-1">Apartments</Link>
+              <Link href="/coming-soon" className="block py-1">Villas</Link>
             </div>
           </div>
 
           <div>
-            <Link href="/services">Services</Link>
+            <Link href="/coming-soon">Services</Link>
           </div>
 
           <div className=''>
@@ -137,17 +137,17 @@ const Navbar = () => {
               className={`ml-4 transition-all duration-500 overflow-hidden ${openDropdown === 'blog' ? 'max-h-[200px]' : 'max-h-0'
                 }`}
             >
-              <Link href="/blog/news" className="block py-1">News</Link>
-              <Link href="/blog/tips" className="block py-1">Tips</Link>
+              <Link href="/coming-soon" className="block py-1">News</Link>
+              <Link href="/coming-soon" className="block py-1">Tips</Link>
             </div>
           </div>
 
           <div>
-            <Link className='pb-2' href="/about">About</Link>
+            <Link className='pb-2' href="/coming-soon">About</Link>
           </div>
 
           <div>
-            <Link className='pb-2' href="/contact">Contact Us</Link>
+            <Link className='pb-2' href="/coming-soon">Contact Us</Link>
           </div>
 
           <div className=''>
@@ -161,15 +161,15 @@ const Navbar = () => {
               className={`ml-4 transition-all duration-500 overflow-hidden ${openDropdown === 'pages' ? 'max-h-[200px]' : 'max-h-0'
                 }`}
             >
-              <Link href="/faq" className="block py-1">FAQ</Link>
-              <Link href="/team" className="block py-1">Team</Link>
+              <Link href="/coming-soon" className="block py-1">FAQ</Link>
+              <Link href="/coming-soon" className="block py-1">Team</Link>
             </div>
           </div>
 
           <div className="space-y-2 pt-4">
-            <Link href="/stay" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Stay With Us</Link>
-            <Link href="/host" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Host With Us</Link>
-            <Link href="/booking" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Booking Now</Link>
+            <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Stay With Us</Link>
+            <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Host With Us</Link>
+            <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Booking Now</Link>
           </div>
         </div>
       </div>
