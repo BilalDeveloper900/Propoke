@@ -16,8 +16,8 @@ const Hero = () => {
 
         <div data-aos="zoom-in" className="flex-1 lg:max-w-[608px]">
           <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
-            Bring Your Family&apos;s  
-            Happiness to Your 
+            Bring Your Family&apos;s
+            Happiness to Your
             Dream House
           </h1>
 
@@ -30,7 +30,7 @@ const Hero = () => {
           </p>
 
           <div className=" mt-6 sm:mt-[40px]">
-            <div className="flex items-center bg-[#FAFAFA] rounded-full pl-4 p-2 w-full md:max-w-[608px]">
+            {/* <div className="flex items-center bg-[#FAFAFA] rounded-full pl-4 p-2 w-full md:max-w-[608px]">
               <FiSearch className="text-[#666666] text-lg" fontSize={16} />
               <input
                 type="text"
@@ -40,7 +40,13 @@ const Hero = () => {
               <button className="bg-[#3854B5] hover:bg-[#3853b5ce] text-white w-[120px] sm:w-[130px] h-[48px] flex justify-center items-center rounded-full font-semibold">
                 Search
               </button>
+            </div> */}
+            <div className="flex flex-col space-y-1 text-base text-start font-medium text-gray-800">
+              <h2 className="text-xl font-bold">Contact Us</h2>
+              <p>Phone: +44 7857 678064</p>
+              <p>Email: management@solidstayproperties.co.uk</p>
             </div>
+
           </div>
 
           <div ref={ref} className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">

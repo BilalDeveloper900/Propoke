@@ -85,7 +85,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
                     className="rounded-xl object-cover h-60 w-full"
                 />
                 <span className="absolute top-4 left-4 bg-gray-800 text-white text-sm font-semibold w-[111px] h-[40px] flex justify-center items-center rounded-full shadow">
-                    ${price},-
+                £ {price},-
                 </span>
             </div>
 

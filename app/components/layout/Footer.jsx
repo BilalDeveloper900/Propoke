@@ -29,15 +29,15 @@ const Footer = () => {
           <ul className="space-y-2 text-sm text-gray-700">
             <li className="flex items-center gap-2">
               <FiMapPin className=" text-gray-800" />
-              <span className='text-[#666666] text-sm leading-[32px]'>123 Anywhere Street, Any City, 12345 ST, Narowal</span>
+              <span className='text-[#666666] text-sm leading-[32px]'>368A Fulwood Road; Sheffield; S10 3GD</span>
             </li>
             <li className="flex items-center gap-2">
               <FiPhone className="text-gray-800" />
-              <span className='text-[#666666] text-sm leading-[32px]'>+123 456 7890</span>
+              <span className='text-[#666666] text-sm leading-[32px]'>+447857678064</span>
             </li>
             <li className="flex items-center gap-2">
               <FiMail className="text-gray-800" />
-              <span className='text-[#666666] text-sm leading-[32px]'>hello@propoke.com</span>
+              <span className='text-[#666666] text-sm leading-[32px]'>management@solidstayproperties.co.uk</span>
             </li>
           </ul>
         </div>

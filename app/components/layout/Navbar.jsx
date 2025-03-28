@@ -3,6 +3,8 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import Link from 'next/link';
 import { useState } from 'react';
 import { FaSortDown } from "react-icons/fa";
+import Image from 'next/image';
+import logo from '../../assets/home/logo/logo.jpg'
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -20,7 +22,13 @@ const Navbar = () => {
   return (
     <header className="bg-white px-3 sm:px-6 py-4">
       <div className="max-w-[1232px] mx-auto flex items-center justify-between">
-        <div className="text-2xl font-bold text-[#333333]">Propoke</div>
+        {/* <div className="text-2xl font-bold text-[#333333]">Propoke</div> */}
+        <div className="">
+          <Image src={logo}
+            alt="Modern House"
+            className='rounded-full h-[50px] w-[50px] object-cover'
+          />
+        </div>
 
         <div className='flex items-center gap-6'>
           <nav className="hidden lg:flex space-x-6 items-center text-sm font-normal text-[#666666]">
