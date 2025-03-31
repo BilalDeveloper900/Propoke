@@ -69,7 +69,7 @@ const Navbar = () => {
             </div>
 
             <Link href="/coming-soon">About</Link>
-            <Link href="/coming-soon">Contact Us</Link>
+            <Link href="/contact">Contact Us</Link>
 
             <div className="relative">
               <button
@@ -155,7 +155,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <Link className='pb-2' href="/coming-soon">Contact Us</Link>
+            <Link className='pb-2' href="/contact">Contact Us</Link>
           </div>
 
           <div className=''>

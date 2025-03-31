@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import { Toaster } from "react-hot-toast";
 
 export default function Home() {
   useEffect(() => {
@@ -17,6 +18,10 @@ export default function Home() {
   return (
     <div >
       <HomeMain />
+      <Toaster
+  position="top-right"
+  reverseOrder={false}
+/>
     </div>
   );
 }
