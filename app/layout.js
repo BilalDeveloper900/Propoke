@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import { Toaster } from "react-hot-toast";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -30,6 +31,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${nunito.variable} antialiased`}
       >
+    <Toaster position="top-center" reverseOrder={false} />
       <Navbar />
        <div className="min-h-screen">{children}</div>
       <Footer />

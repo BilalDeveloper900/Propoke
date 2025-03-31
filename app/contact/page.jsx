@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import toast from 'react-hot-toast';
+import { toast } from 'react-hot-toast';
 import { FiMail, FiMapPin, FiPhone } from 'react-icons/fi'
 
 const Page = () => {
@@ -38,6 +38,13 @@ const Page = () => {
     if (data.success) {
       toast.success("Form submitted successfully");
       console.log("Success", data);
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: "",
+      });
     } else {
       toast.error("Form submission failed");
       console.log("Error", data);
@@ -149,7 +156,7 @@ const Page = () => {
               required
             ></textarea>
 
-            <button type="submit" className="text-base bg-[#3854B5] text-white h-[48px] w-[186px] p-2 rounded-full">
+            <button type="submit" className="text-base cursor-pointer bg-[#3854B5] text-white h-[48px] w-[186px] p-2 rounded-full">
               Send Message
             </button>
           </form>
