@@ -34,23 +34,14 @@ const Navbar = () => {
           <nav className="hidden lg:flex space-x-6 items-center text-sm font-normal text-[#666666]">
             <Link href="/">Home</Link>
 
-            <div className="relative">
-              <button
-                onClick={() => toggleDropdown('listing')}
-                className="flex items-center gap-1"
-              >
-                Listing <FaSortDown />
-              </button>
-              <div
-                className={`absolute bg-white shadow-md rounded p-4 top-full mt-2 min-w-[150px] z-10 transition-all duration-500 overflow-hidden ${openDropdown === 'listing' ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-              >
-                <Link href="/coming-soon" className="block py-1">Apartments</Link>
-                <Link href="/coming-soon" className="block py-1">Villas</Link>
-              </div>
-            </div>
+            <Link
+              href="/listing"
+              className="flex items-center gap-1"
+            >
+              Listing
+            </Link>
 
-            <Link href="/coming-soon">Services</Link>
+            <Link href="/services">Services</Link>
 
             <div className="relative">
               <button
@@ -68,7 +59,7 @@ const Navbar = () => {
               </div>
             </div>
 
-            <Link href="/coming-soon">About</Link>
+            <Link href="/about">About</Link>
             <Link href="/contact">Contact Us</Link>
 
             <div className="relative">
@@ -114,24 +105,15 @@ const Navbar = () => {
             <Link href="/">Home</Link>
           </div>
 
-          <div className=''>
-            <button
-              onClick={() => toggleDropdown('listing')}
-              className="flex items-center gap-1 w-full"
-            >
-              Listing <FaSortDown />
-            </button>
-            <div
-              className={`ml-4 transition-all duration-500 overflow-hidden ${openDropdown === 'listing' ? 'max-h-[200px]' : 'max-h-0'
-                }`}
-            >
-              <Link href="/coming-soon" className="block py-1">Apartments</Link>
-              <Link href="/coming-soon" className="block py-1">Villas</Link>
-            </div>
-          </div>
+          <Link
+            href="/listing"
+            className="flex items-center gap-1 w-full"
+          >
+            Listing 
+          </Link>
 
           <div>
-            <Link href="/coming-soon">Services</Link>
+            <Link href="/services">Services</Link>
           </div>
 
           <div className=''>
@@ -151,7 +133,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <Link className='pb-2' href="/coming-soon">About</Link>
+            <Link className='pb-2' href="/about">About</Link>
           </div>
 
           <div>

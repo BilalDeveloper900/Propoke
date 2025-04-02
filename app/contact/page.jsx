@@ -20,7 +20,7 @@ const Page = () => {
     event.preventDefault();
 
     const formData = new FormData(event.target);
-    formData.append("access_key", "d88243da-a3f6-436b-b7a9-fcadea861f9c");
+    formData.append("access_key", "e894f63a-b606-41a6-ab56-8a6c739b5d85");
     formData.append("from_name", "propoke"); // Change notification name
 
     const object = Object.fromEntries(formData);
