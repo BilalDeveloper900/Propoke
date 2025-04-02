@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
 import Image from 'next/image';
 import { FiMapPin } from 'react-icons/fi';
 import { PiBedLight } from 'react-icons/pi';
@@ -7,6 +8,7 @@ import list2 from '../../assets/home/list2.svg'
 import list3 from '../../assets/home/list3.svg'
 import list4 from '../../assets/home/list4.svg'
 import { RiSendPlaneLine } from "react-icons/ri";
+import CustomModal from '../CustomModal/CustomModal'
 
 const listings = [
     {
@@ -76,6 +78,7 @@ const FeaturedListing = () => {
 
 
 const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
+    const [isModalOpen, setModalOpen] = useState(false);
     return (
         <div className="rounded-xl overflow-hidden max-w-xs bg-white">
             <div data-aos="zoom-in" className="relative">
@@ -85,7 +88,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
                     className="rounded-xl object-cover h-60 w-full"
                 />
                 <span className="absolute top-4 left-4 bg-gray-800 text-white text-sm font-semibold w-[111px] h-[40px] flex justify-center items-center rounded-full shadow">
-                £ {price},-
+                    £ {price},-
                 </span>
             </div>
 
@@ -94,7 +97,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
 
                 <div className="flex items-center text-sm text-gray-600 space-x-4">
                     <div className="flex items-center gap-1">
-                    <RiSendPlaneLine />
+                        <RiSendPlaneLine />
                         <span className='text-[#666666]'>{location}</span>
                     </div>
                     <div className="flex items-center gap-1">
@@ -105,11 +108,13 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
 
                 <div className="mt-3 flex items-center space-x-4">
                     <p className="text-sm text-gray-400 line-through">${oldPrice}/night</p>
-                    <button className="bg-[#3854B5] text-white w-[105px] cursor-pointer h-[32px] rounded-full text-sm hover:bg-[#3853b5d7] transition">
+                    <button onClick={() => setModalOpen(true)} className="bg-[#3854B5] text-white w-[105px] cursor-pointer h-[32px] rounded-full text-sm hover:bg-[#3853b5d7] transition">
                         Book Now
                     </button>
                 </div>
             </div>
+
+            <CustomModal title={title} isOpen={isModalOpen} onRequestClose={() => setModalOpen(false)} width='700px' />
         </div>
     );
 };

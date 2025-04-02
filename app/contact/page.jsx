@@ -8,19 +8,20 @@ const Page = () => {
     name: "",
     email: "",
     phone: "",
-    subject: "",
+    questions: "",
     message: "",
   });
 
-  const handleChange = async (e) => {
+  const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const formData = new FormData(event.target);
 
+    const formData = new FormData(event.target);
     formData.append("access_key", "d88243da-a3f6-436b-b7a9-fcadea861f9c");
+    formData.append("from_name", "propoke"); // Change notification name
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -29,27 +30,26 @@ const Page = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: json
+      body: json,
     });
-    
+
     const data = await res.json();
     if (data.success) {
       toast.success("Form submitted successfully");
-      console.log("Success", data);
       setFormData({
         name: "",
         email: "",
         phone: "",
-        subject: "",
+        questions: "",
         message: "",
       });
     } else {
       toast.error("Form submission failed");
-      console.log("Error", data);
     }
   };
+
 
   return (
     <div className=' px-4 sm:px-6 md:px-10'>
@@ -133,11 +133,12 @@ const Page = () => {
 
               <div>
                 <label htmlFor="subject">Your Subject</label>
+
                 <input
                   type="text"
-                  name="subject"
-                  placeholder="Ask Question"
-                  value={formData.subject}
+                  name="questions"
+                  placeholder="Ask a question"
+                  value={formData.questions}
                   onChange={handleChange}
                   className="w-full p-[16px] border rounded-[16px] h-[64px]"
                   required
