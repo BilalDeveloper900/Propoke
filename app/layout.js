@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import { Toaster } from "react-hot-toast";
+import Header from "./components/layout/Header";
 
 const nunito = Nunito({
   variable: "--font-nunito",
@@ -28,13 +29,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${nunito.variable} antialiased`}
-      >
-    <Toaster position="top-center" reverseOrder={false} />
-      <Navbar />
-       <div className="min-h-screen">{children}</div>
-      <Footer />
+      <body className={`${nunito.variable} antialiased`}>
+        <Toaster position="top-center" reverseOrder={false} />
+        <Header />
+        <Navbar />
+        <div className="min-h-screen">{children}</div>
+        <Footer />
       </body>
     </html>
   );

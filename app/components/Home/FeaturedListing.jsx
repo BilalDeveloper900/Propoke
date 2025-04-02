@@ -88,7 +88,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
                     className="rounded-xl object-cover h-60 w-full"
                 />
                 <span className="absolute top-4 left-4 bg-gray-800 text-white text-sm font-semibold w-[111px] h-[40px] flex justify-center items-center rounded-full shadow">
-                    £ {price},-
+                    £ {oldPrice}
                 </span>
             </div>
 
@@ -107,7 +107,7 @@ const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
                 </div>
 
                 <div className="mt-3 flex items-center space-x-4">
-                    <p className="text-sm text-gray-400 line-through">${oldPrice}/night</p>
+                    <p className="text-sm text-gray-400 ">£ {oldPrice}/night</p>
                     <button onClick={() => setModalOpen(true)} className="bg-[#3854B5] text-white w-[105px] cursor-pointer h-[32px] rounded-full text-sm hover:bg-[#3853b5d7] transition">
                         Book Now
                     </button>

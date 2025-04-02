@@ -1,4 +1,5 @@
 import React from 'react'
+import FeaturedServices from '../components/Services/FeaturedServices'
 
 const page = () => {
     return (
@@ -8,6 +9,8 @@ const page = () => {
 
                 <p className='leading-[32px] max-w-[600px]'>We specialize in providing high-quality construction and building services for various types of projects. Whether you need a new home, a corporate office, or a commercial space, we ensure top-tier craftsmanship, timely execution, and cost-effective solutions.</p>
             </div>
+
+            <FeaturedServices/>
         </div>
     )
 }
