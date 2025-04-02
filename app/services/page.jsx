@@ -1,5 +1,7 @@
 import React from 'react'
 import FeaturedServices from '../components/Services/FeaturedServices'
+import HomeCtaSection from '../components/Services/HomeCtaSection'
+import MultiLogo from '../components/Services/MultiLogo'
 
 const page = () => {
     return (
@@ -11,6 +13,14 @@ const page = () => {
             </div>
 
             <FeaturedServices/>
+
+            <div>
+                <MultiLogo />
+            </div>
+
+            <div>
+                <HomeCtaSection />
+            </div>
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import Image from "next/image";
-import case1 from "../../assets/home/case1.svg";
-import case2 from "../../assets/home/case2.svg";
-import case3 from "../../assets/home/case3.svg";
-import case4 from "../../assets/home/case4.svg";
+import case1 from "../../assets/services/service1.svg";
+import case2 from "../../assets/services/service01.svg";
+import case3 from "../../assets/services/service2.svg";
+import case4 from "../../assets/services/service3.svg";
 
 export default function HomeCtaSection() {
   return (
@@ -35,21 +35,21 @@ export default function HomeCtaSection() {
               alt="House 1"
               width={192}
               height={184}
-              className="rounded-xl object-cover"
+              className="rounded-xl  object-cover"
             />
             <Image
               src={case3}
               alt="House 2"
               width={192}
               height={184}
-              className="rounded-xl object-cover"
+              className="rounded-xl  object-cover"
             />
             <Image
               src={case4}
               alt="House 3"
               width={192}
               height={184}
-              className="rounded-xl object-cover"
+              className="rounded-xl  object-cover"
             />
           </div>
         </div>
