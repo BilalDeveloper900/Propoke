@@ -2,6 +2,7 @@ import React from 'react'
 import FeaturedServices from '../components/Services/FeaturedServices'
 import HomeCtaSection from '../components/Services/HomeCtaSection'
 import MultiLogo from '../components/Services/MultiLogo'
+import RealEstateServices from '../components/Services/RealEstateServices'
 
 const page = () => {
     return (
@@ -12,7 +13,13 @@ const page = () => {
                 <p className='leading-[32px] max-w-[600px]'>We specialize in providing high-quality construction and building services for various types of projects. Whether you need a new home, a corporate office, or a commercial space, we ensure top-tier craftsmanship, timely execution, and cost-effective solutions.</p>
             </div>
 
-            <FeaturedServices/>
+            <div>
+                <FeaturedServices />
+            </div>
+
+            <div>
+                <RealEstateServices />
+            </div>
 
             <div>
                 <MultiLogo />
