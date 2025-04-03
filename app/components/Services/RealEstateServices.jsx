@@ -33,7 +33,7 @@ const RealEstateServices = () => {
           </div>
         </div>
 
-        <div className='lg:max-w-[560px]'>
+        <div data-aos="zoom-in"  className='lg:max-w-[560px]'>
           <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4">
             Real Estate Services
           </h2>

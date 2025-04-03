@@ -46,6 +46,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     email: "",
     phone: "",
     days: "",
+    date: "",  
     message: "",
     houseTitle: title || ""
   });
@@ -62,6 +63,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     formDataObj.append("houseTitle", formData.houseTitle); // Ensure houseTitle is included
     formDataObj.append("access_key", "e894f63a-b606-41a6-ab56-8a6c739b5d85");
     formDataObj.append("from_name", "propoke"); // Change notification name
+    formDataObj.append("date", formData.date);
 
     const object = Object.fromEntries(formDataObj);
     const json = JSON.stringify(object);
@@ -83,6 +85,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
         email: "",
         phone: "",
         days: "",
+        date: "",  
         message: "",
         houseTitle: title || "", // Reset houseTitle properly
       });
@@ -98,7 +101,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     <Modal
       isOpen={isOpen}
       onRequestClose={onRequestClose}
-      className="modal relative outline-none bg-white border-none"
+      className="modal relative outline-none bg-white border-none "
       style={modalStyle}
       contentLabel={contentLabel}
       overlayClassName="overlay"
@@ -141,7 +144,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
               />
             </div>
           </div>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
             <div>
               <label htmlFor="phone">Your Phone Number</label>
               <input
@@ -154,6 +157,18 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
                 required
               />
             </div>
+
+            <div>
+  <label htmlFor="date">Booking Date</label>
+  <input
+    type="date"
+    name="date"
+    value={formData.date}
+    onChange={handleChange}
+    className="w-full p-[16px] border rounded-[16px] h-[64px]"
+    required
+  />
+</div>
 
             <div>
               <label htmlFor="subject">For how many days</label>

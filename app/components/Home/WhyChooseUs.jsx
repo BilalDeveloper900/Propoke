@@ -47,7 +47,7 @@ const WhyChooseUs = () => {
         </div>
 
         <div data-aos="zoom-in"  className="relative justify-center hidden lg:flex">
-          <div className="w-[90%] rounded-xl overflow-hidden shadow-lg">
+          <div className="w-[90%] sm:ml-auto rounded-xl overflow-hidden shadow-lg">
             <Image
               src={whyus2}
               alt="Main Image"

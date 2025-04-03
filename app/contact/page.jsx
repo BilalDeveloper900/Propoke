@@ -53,7 +53,7 @@ const Page = () => {
 
   return (
     <div className=' px-4 sm:px-6 md:px-10'>
-      <div className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
+      <div  data-aos="zoom-in"  className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
         <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Contact Us</h1>
 
         <p className='leading-[32px] max-w-[600px]'>We’re here to help you find your dream home! Whether you have questions about a property, need assistance with buying or selling, or want expert real estate advice</p>

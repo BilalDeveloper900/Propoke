@@ -5,20 +5,20 @@ import logo3 from '../../assets/services/logo2.svg'
 import logo4 from '../../assets/services/logo3.svg'
 import Image from 'next/image'
 
-const MultiLogo = () => {
+const MultiLogoAbout = () => {
     return (
-        <div className='px-4 sm:px-6 md:px-10 mb-10'>
+        <div className='px-4 sm:px-6 md:px-10 mb-20'>
             <div data-aos="zoom-in" className="max-w-[1136px] grid sm:grid-cols-2 mx-auto items-center mb-12">
                 <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4 max-w-[528px]">
-                    Our Providers
+                Our Trusted Partner
                 </h2>
 
                 <p className=" text-[#666666] text-base leading-[32px]">
-                    we collaborate with a network of esteemed partners to provide our clients with comprehensive and top-notch services.
+                At Propoke Real Estate, we believe in building strong relationships with industry leaders to provide our clients with the best services and opportunities.
                 </p>
             </div>
 
-            <div data-aos="zoom-in"  className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4'>
                 <Image
                     src={logo1}
                     alt="Modern House"
@@ -52,4 +52,4 @@ const MultiLogo = () => {
     )
 }
 
-export default MultiLogo
+export default MultiLogoAbout

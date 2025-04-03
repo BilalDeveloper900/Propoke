@@ -37,7 +37,7 @@ const FeaturedServices = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1136px] mx-auto">
+      <div  data-aos="zoom-in"  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1136px] mx-auto">
         {steps.map((step, index) => (
           <div key={index} data-aos="zoom-in" className="">
             <div className="sm:flex block">

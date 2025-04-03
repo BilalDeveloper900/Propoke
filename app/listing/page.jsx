@@ -42,7 +42,7 @@ const listings = [
 const page = () => {
     return (
         <div className=' px-4 sm:px-6 md:px-10'>
-            <div className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
+            <div data-aos="zoom-in"  className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
                 <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Our Listing</h1>
 
                 <p className='leading-[32px] max-w-[600px]'>Discover the best properties with Propoke Real Estate! Whether you’re looking for a dream home, luxury villa, commercial space, or investment property, our curated listings offer verified, high-quality properties in prime locations.</p>
@@ -63,7 +63,7 @@ const page = () => {
 const ListingCard = ({ image, price, title, location, bedrooms, oldPrice }) => {
     const [isModalOpen, setModalOpen] = useState(false);
     return (
-        <div className="rounded-xl overflow-hidden max-w-[368px] mx-auto bg-white mb-[40px]">
+        <div  data-aos="zoom-in"  className="rounded-xl overflow-hidden max-w-[368px] mx-auto bg-white mb-[40px]">
             <div data-aos="zoom-in" className="relative">
                 <Image
                     src={image}
