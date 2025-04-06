@@ -1,5 +1,4 @@
 'use client';
-
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-modal';
 import './CustomModal.css';
@@ -46,7 +45,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     email: "",
     phone: "",
     days: "",
-    date: "",  
+    date: "",
     message: "",
     houseTitle: title || ""
   });
@@ -85,7 +84,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
         email: "",
         phone: "",
         days: "",
-        date: "",  
+        date: "",
         message: "",
         houseTitle: title || "", // Reset houseTitle properly
       });
@@ -159,16 +158,16 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
             </div>
 
             <div>
-  <label htmlFor="date">Booking Date</label>
-  <input
-    type="date"
-    name="date"
-    value={formData.date}
-    onChange={handleChange}
-    className="w-full p-[16px] border rounded-[16px] h-[64px]"
-    required
-  />
-</div>
+              <label htmlFor="date">Booking Date</label>
+              <input
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                className="w-full p-[16px] border rounded-[16px] h-[64px]"
+                required
+              />
+            </div>
 
             <div>
               <label htmlFor="subject">For how many days</label>
