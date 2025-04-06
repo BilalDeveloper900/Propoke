@@ -80,8 +80,8 @@ const Navbar = () => {
           </nav>
 
           <div className="space-x-3 hidden lg:flex">
-            <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Stay With Us</Link>
-            <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Host With Us</Link>
+            <Link href="/stay-with-us" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Stay With Us</Link>
+            <Link href="/host-with-us" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Host With Us</Link>
             <Link href="/coming-soon" className="bg-[#3854B5] text-white px-6 py-2 rounded-full text-sm">Booking Now</Link>
           </div>
         </div>
@@ -157,8 +157,8 @@ const Navbar = () => {
           </div>
 
           <div className="space-y-2 pt-4">
-            <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Stay With Us</Link>
-            <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Host With Us</Link>
+            <Link href="/stay-with-us" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Stay With Us</Link>
+            <Link href="/host-with-us" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Host With Us</Link>
             <Link href="/coming-soon" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Booking Now</Link>
           </div>
         </div>
