@@ -43,7 +43,7 @@ const Navbar = () => {
 
             <Link href="/services">Services</Link>
 
-            <div className="relative">
+            {/* <div className="relative">
               <button
                 onClick={() => toggleDropdown('blog')}
                 className="flex items-center gap-1"
@@ -57,12 +57,12 @@ const Navbar = () => {
                 <Link href="/coming-soon" className="block py-1">News</Link>
                 <Link href="/coming-soon" className="block py-1">Tips</Link>
               </div>
-            </div>
+            </div> */}
 
             <Link href="/about">About</Link>
             <Link href="/contact">Contact Us</Link>
 
-            <div className="relative">
+            {/* <div className="relative">
               <button
                 onClick={() => toggleDropdown('pages')}
                 className="flex items-center gap-1"
@@ -76,7 +76,7 @@ const Navbar = () => {
                 <Link href="/coming-soon" className="block py-1">FAQ</Link>
                 <Link href="/coming-soon" className="block py-1">Team</Link>
               </div>
-            </div>
+            </div> */}
           </nav>
 
           <div className="space-x-3 hidden lg:flex">
@@ -116,7 +116,7 @@ const Navbar = () => {
             <Link href="/services">Services</Link>
           </div>
 
-          <div className=''>
+          {/* <div className=''>
             <button
               onClick={() => toggleDropdown('blog')}
               className="flex items-center gap-1 w-full"
@@ -130,7 +130,7 @@ const Navbar = () => {
               <Link href="/coming-soon" className="block py-1">News</Link>
               <Link href="/coming-soon" className="block py-1">Tips</Link>
             </div>
-          </div>
+          </div> */}
 
           <div>
             <Link className='pb-2' href="/about">About</Link>
@@ -140,7 +140,7 @@ const Navbar = () => {
             <Link className='pb-2' href="/contact">Contact Us</Link>
           </div>
 
-          <div className=''>
+          {/* <div className=''>
             <button
               onClick={() => toggleDropdown('pages')}
               className="flex items-center gap-1 w-full"
@@ -154,7 +154,7 @@ const Navbar = () => {
               <Link href="/coming-soon" className="block py-1">FAQ</Link>
               <Link href="/coming-soon" className="block py-1">Team</Link>
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-2 pt-4">
             <Link href="/stay-with-us" className="block bg-[#3854B5] text-white px-6 py-2 rounded-full text-center">Stay With Us</Link>

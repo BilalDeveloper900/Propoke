@@ -18,7 +18,7 @@ const MultiLogo = () => {
                 </p>
             </div>
 
-            <div data-aos="zoom-in"  className='grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4'>
+            <div data-aos="zoom-in"  className='max-w-[1236px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-4'>
                 <Image
                     src={logo1}
                     alt="Modern House"
