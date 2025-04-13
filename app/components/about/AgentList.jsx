@@ -43,7 +43,7 @@ const AgentList = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
+            <div className='max-w-[1136px] mx-auto px-4 sm:px-0 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4'>
 
                 {teamData.map((team) => (
                     <div className='mx-auto'>
