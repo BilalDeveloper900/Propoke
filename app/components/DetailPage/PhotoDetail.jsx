@@ -35,10 +35,10 @@ const PhotoDetail = () => {
                                 <span className='text-[#666666]'>3 Bedroom</span>
                             </div>
                         </div>
-
                         
                     </div>
                 </div>
+                
 
                 <div data-aos="zoom-in" className='md:max-w-[528px] '>
                     <p className='leading-[32px] max-w-[600px]'> High-quality wood, stone, and glass for a luxurious feel. Advanced security, lighting, and temperature control.</p>
