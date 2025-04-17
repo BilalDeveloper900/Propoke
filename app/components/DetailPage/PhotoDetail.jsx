@@ -38,6 +38,8 @@ const PhotoDetail = () => {
                         
                     </div>
                 </div>
+
+
                 
 
                 <div data-aos="zoom-in" className='md:max-w-[528px] '>
