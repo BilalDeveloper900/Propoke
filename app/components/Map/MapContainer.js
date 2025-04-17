@@ -6,7 +6,8 @@ const MapContainer = ({ addresses = "Berlin", height = "240px", planData, busine
   const [locations, setLocations] = useState([]);
   const [mapLoaded, setMapLoaded] = useState(false);
 
-  const API_KEY = 'AIzaSyDvZeBveYG3wSJr1bmdE5kJ-0C92WG2GC4'
+  // const API_KEY = 'AIzaSyDvZeBveYG3wSJr1bmdE5kJ-0C92WG2GC4'
+  const API_KEY = ''
 
   useEffect(() => {
     const fetchCoordinates = async () => {
