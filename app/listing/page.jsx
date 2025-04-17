@@ -11,6 +11,7 @@ import { MdBathtub } from "react-icons/md";
 import CustomModal from '../components/CustomModal/CustomModal'
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 import { FaBed } from 'react-icons/fa'
+import Link from 'next/link'
 
 const listings = [
     {
@@ -41,7 +42,7 @@ const listings = [
 
 const page = () => {
     return (
-        <div className='max-w-[1136px] mx-auto px-4 sm:px-6 md:px-10'>
+        <div className='max-w-[1236px] mx-auto px-4 sm:px-6 md:px-10'>
             <div data-aos="zoom-in"  className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
                 <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Our Listing</h1>
 
@@ -51,7 +52,9 @@ const page = () => {
             <section className="bg-white mt-6 sm:mt-10 md:mt-[66px]">
                 <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                     {listings.map((item, index) => (
-                        <ListingCard key={index} {...item} />
+                        <Link key={index} href={`/detail-page/${index}`}>
+                            <ListingCard  {...item} />
+                        </Link>
                     ))}
                 </div>
             </section>

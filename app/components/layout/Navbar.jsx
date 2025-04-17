@@ -23,12 +23,12 @@ const Navbar = () => {
     <header className="bg-white px-3 sm:px-6 py-4">
       <div className="max-w-[1232px] mx-auto flex items-center justify-between">
         {/* <div className="text-2xl font-bold text-[#333333]">Propoke</div> */}
-        <div className="">
+        <Link href={'/'} className="">
           <Image src={logo}
             alt="Modern House"
             className='rounded-full h-[50px] w-[50px] object-cover'
           />
-        </div>
+        </Link>
 
         <div className='flex items-center gap-6'>
           <nav className="hidden lg:flex space-x-6 items-center text-sm font-normal text-[#666666]">
