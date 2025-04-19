@@ -37,6 +37,7 @@ const PhotoSection = ({ banner, business }) => {
               See All {business.attachments.length} Photos
             </button>
           )} */}
+          
                     </div>
                 </div>
 

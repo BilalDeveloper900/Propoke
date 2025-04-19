@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import list1 from '../assets/list/list1.svg'
 import list2 from '../assets/list/list2.svg'
 import list3 from '../assets/list/list3.svg'
@@ -12,6 +12,7 @@ import CustomModal from '../components/CustomModal/CustomModal'
 import { MdOutlineCheckBoxOutlineBlank } from "react-icons/md";
 import { FaBed } from 'react-icons/fa'
 import Link from 'next/link'
+import propertyService from '../api/propertyService'
 
 const listings = [
     {
@@ -41,6 +42,22 @@ const listings = [
 ];
 
 const page = () => {
+    const [properties, setProperties] = useState([]);
+
+    const getAllProperties = async () => {
+        try {
+          const response = await propertyService.getAllProperties();
+          setProperties(response);
+          console.log(response, 'response');
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    
+      useEffect(() => {
+        getAllProperties();
+      }, []);
+
     return (
         <div className='max-w-[1236px] mx-auto px-4 sm:px-6 md:px-10'>
             <div data-aos="zoom-in"  className='h-[312px] px-4 flex justify-center items-center text-center flex-col'>
