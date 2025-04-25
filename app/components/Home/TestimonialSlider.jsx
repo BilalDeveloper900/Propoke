@@ -62,7 +62,7 @@ export default function TestimonialSlider() {
             <div className="max-w-7xl mx-auto">
                 <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] ">What Says from Our Happy Customers</h2>
                 <p className="text-[#666666] text-base leading-[32px]">
-                    Don’t just take our word for it—hear from our satisfied clients who found their dream homes with Propoke!
+                    Don’t just take our word for it—hear from our satisfied clients who found their dream homes with Solid Stay Properties!
                 </p>
 
                 <div className='py-20'>

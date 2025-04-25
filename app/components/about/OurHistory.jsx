@@ -27,13 +27,13 @@ const OurHistory = () => {
             Our History
           </h2>
           <p className="text-[#666666] text-base leading-[32px]">
-            For over 12 years, Propoke Real Estate has been a trusted name in the real estate industry, helping countless families, investors, and businesses.
+            For over 12 years, Solid Stay Properties has been a trusted name in the real estate industry, helping countless families, investors, and businesses.
           </p>
 
           {/* Feature Cards */}
           <div className="mt-10">
             {features.map((feature, index) => (
-              <div key={index} data-aos="zoom-in" className="flex flex-col sm:items-center sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
+              <div key={index}  className="flex flex-col sm:items-center sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
                 <div className=" mr-4 mb-4 mt-4 sm:mt-0" >
                   <BsCheckCircleFill className='' color='black' fontSize={40} />
                 </div>
@@ -46,7 +46,7 @@ const OurHistory = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in" className="relative justify-center hidden lg:flex">
+        <div  className="relative justify-center hidden lg:flex">
           <div className="w-[90%] sm:ml-auto rounded-xl overflow-hidden shadow-lg">
             <Image
               src={whyus2}

@@ -22,7 +22,7 @@ const StayWithUs = () => {
 
         const form = new FormData(event.target);
         form.append('access_key', 'e894f63a-b606-41a6-ab56-8a6c739b5d85');
-        form.append('from_name', 'propoke');
+        form.append('from_name', 'solidstayproperties');
 
         const object = Object.fromEntries(form);
         const json = JSON.stringify(object);

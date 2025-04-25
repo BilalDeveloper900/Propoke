@@ -33,7 +33,7 @@ const page = () => {
     return (
         <div>
             <section className="bg-white px-4 sm:px-10 lg:px-0 ">
-                <div data-aos="zoom-in" className="max-w-[1146px] mx-auto relative">
+                <div  className="max-w-[1146px] mx-auto relative">
                     <Image
                         src={heroImage}
                         alt="Modern House"
@@ -66,13 +66,13 @@ const page = () => {
                     </span>
                 </div>
 
-                <div data-aos="zoom-in" className='h-[220px] px-4 flex justify-center items-center text-center flex-col'>
+                <div  className='h-[220px] px-4 flex justify-center items-center text-center flex-col'>
                     <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Explore Our Featured Apartments</h1>
 
                     <p className='leading-[32px] max-w-[600px]'>Stay in our handpicked apartments with top-class amenities and comfort. Scroll to explore!</p>
                 </div>
 
-                <div data-aos="zoom-in" className='max-w-[1146px] mx-auto mb-16'>
+                <div  className='max-w-[1146px] mx-auto mb-16'>
                     <Carousel showThumbs={false} infiniteLoop autoPlay>
                         {sliderImages.map((img) => (
                             <div >
@@ -87,7 +87,7 @@ const page = () => {
                     </Carousel>
                 </div>
 
-                <div data-aos="zoom-in" className='h-[220px] px-4 flex justify-center items-center text-center flex-col'>
+                <div  className='h-[220px] px-4 flex justify-center items-center text-center flex-col'>
                     <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Photo Gallery</h1>
 
                     <p className='leading-[32px] max-w-[600px]'>Browse through our gallery to explore beautifully designed apartments, cozy homes, and luxury stays.</p>

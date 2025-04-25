@@ -9,7 +9,7 @@ export default function HomeCtaSection() {
     <section className=" py-20 px-4">
       <div className="max-w-[1136px] mx-auto flex flex-col md:flex-row items-center gap-10">
 
-        <div data-aos="zoom-in" className="flex sm:hidden lg:flex">
+        <div  className="flex sm:hidden lg:flex">
           <Image
             src={case1}
             alt="Real Estate Agent"
@@ -17,12 +17,12 @@ export default function HomeCtaSection() {
           />
         </div>
 
-        <div data-aos="zoom-in" className="w-full lg:w-1/2">
+        <div  className="w-full lg:w-1/2">
           <h2 className="text-[32px] sm:text-[40px] md:text-[56px] font-bold text-[#333333] mb-4">
             Let's Move to Your Dream Family Home
           </h2>
           <p className="text-[#666666] text-base leading-[32px] mb-6">
-            Finding the perfect home for your family is a journey filled with excitement, and Propoke Real Estate is here to make it effortless. Whether you're looking for a spacious home, a cozy retreat, or a vibrant neighborhood, we'll help you find the perfect place where memories are made.
+            Finding the perfect home for your family is a journey filled with excitement, and Solid Stay Properties is here to make it effortless. Whether you're looking for a spacious home, a cozy retreat, or a vibrant neighborhood, we'll help you find the perfect place where memories are made.
           </p>
 
           <button className="bg-[#3854B5] cursor-pointer hover:bg-[#3853b5dc] text-white font-semibold w-full sm:w-[179px] h-[40px] flex justify-center items-center rounded-full mb-6">

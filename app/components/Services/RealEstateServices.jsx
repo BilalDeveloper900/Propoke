@@ -14,7 +14,7 @@ const RealEstateServices = () => {
   return (
     <section className="bg-white py-10 px-4 sm:px-6 lg:px-0 mb-20">
       <div className="max-w-[1136px] mx-auto flex justify-between items-center">
-        <div data-aos="zoom-in" className="relative rounded-xl justify-center hidden lg:flex">
+        <div  className="relative rounded-xl justify-center hidden lg:flex">
           <div className=" rounded-xl overflow-hidden shadow-lg">
             <Image
               src={real}
@@ -33,7 +33,7 @@ const RealEstateServices = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in"  className='lg:max-w-[560px]'>
+        <div   className='lg:max-w-[560px]'>
           <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4">
             Real Estate Services
           </h2>

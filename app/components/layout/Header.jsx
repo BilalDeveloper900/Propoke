@@ -1,29 +1,36 @@
+'use client';
 import React from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin, FaPhoneAlt } from 'react-icons/fa';
+import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa';
 import { MdEmail } from "react-icons/md";
-import { AiFillTwitterCircle } from "react-icons/ai";
 
 const Header = () => {
-    return (
-        <div className='bg-[#FAFAFA] w-full sticky top-0 z-50 '>
-            <div className='max-w-[1232px] mx-auto sm:flex-row flex-col flex justify-between p-3'>
-                <div className='flex sm:flex-row flex-col items-center space-x-4'>
-                    <div className='flex items-center'>
-                        <MdEmail fontSize={18} className='mr-1 text-[#3854B5] cursor-pointer'/>
-                        management@solidstayproperties.co.uk
-                    </div>
+    const whatsappNumber = '447857678064'; // without + or spaces
 
-                    <div className='flex items-center'>
-                        <FaPhoneAlt className='mr-1 text-[#3854B5] cursor-pointer' />
+    return (
+        <div className='bg-[#3854B5] text-white w-full sticky top-0 z-50'>
+            <div className='max-w-[1232px] mx-auto sm:flex-row flex-col flex justify-between p-3'>
+                <div data-aos="zoom-in" className='flex sm:flex-row flex-col items-center space-x-0 sm:space-x-4 space-y-2 sm:space-y-0'>
+                    <a href="mailto:management@solidstayproperties.co.uk" className='flex items-center hover:underline'>
+                        <MdEmail fontSize={18} className='mr-1 cursor-pointer' />
+                        management@solidstayproperties.co.uk
+                    </a>
+
+                    <a href="tel:+447857678064" className='flex items-center hover:underline'>
+                        <FaPhoneAlt className='mr-1 cursor-pointer' />
                         +44 7857 678064
-                    </div>
+                    </a>
                 </div>
 
-                <div className=' hidden sm:flex items-center space-x-4 text-lg'>
-                    <FaFacebook className='text-[#3854B5] cursor-pointer' />
-                    <AiFillTwitterCircle className='text-[#3854B5] cursor-pointer' />
-                    <FaInstagram className='text-[#3854B5] cursor-pointer' />
-                    <FaLinkedin className='text-[#3854B5] cursor-pointer' />
+                <div data-aos="zoom-in" className='flex justify-center items-center space-x-4 text-lg mt-2 sm:mt-0'>
+                    <a
+                        href={`https://wa.me/${whatsappNumber}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='flex items-center bg-green-500 text-white px-4 py-1 rounded-full font-medium hover:bg-green-600 transition'
+                    >
+                        <FaWhatsapp className='mr-2 text-xl' />
+                        WhatsApp
+                    </a>
                 </div>
             </div>
         </div>

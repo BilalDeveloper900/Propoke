@@ -4,10 +4,12 @@ import Modal from 'react-modal';
 import './CustomModal.css';
 import { IoClose } from "react-icons/io5";
 import { toast } from 'react-hot-toast';
+import bookingService from '../../api/bookingService';
 
-const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now', width = '90%', height = 'fit-content' }) => {
+const CustomModal = ({ isOpen, title, location, onRequestClose, contentLabel = 'Book Now', width = '90%', height = 'fit-content' }) => {
   const [modalWidth, setModalWidth] = useState(width);
   const [mounted, setMounted] = useState(false); // Ensures modal only renders on the client
+  const [loading, setLoading] = useState(false)
 
   useEffect(() => {
     setMounted(true); // Set mounted to true only on the client
@@ -55,13 +57,15 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
   };
 
   const handleSubmit = async (event) => {
+    setLoading(true)
+
     event.preventDefault();
 
     // Add additional fields to FormData
     const formDataObj = new FormData(event.target);
     formDataObj.append("houseTitle", formData.houseTitle); // Ensure houseTitle is included
     formDataObj.append("access_key", "e894f63a-b606-41a6-ab56-8a6c739b5d85");
-    formDataObj.append("from_name", "propoke"); // Change notification name
+    formDataObj.append("from_name", "solidstayproperties"); // Change notification name
     formDataObj.append("date", formData.date);
 
     const object = Object.fromEntries(formDataObj);
@@ -79,6 +83,18 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     const data = await res.json();
     if (data.success) {
       toast.success("Form submitted successfully");
+
+      await bookingService.createBooking({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        days: formData.days,
+        date: formData.date,
+        message: formData.message,
+        houseTitle: formData.houseTitle,
+        propertyLocation: location,
+      });
+
       setFormData({
         name: "",
         email: "",
@@ -92,6 +108,8 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
     } else {
       toast.error("Form submission failed");
     }
+
+    setLoading(false)
   };
 
   if (!mounted) return null; // Prevent rendering on server-side
@@ -194,7 +212,7 @@ const CustomModal = ({ isOpen, title, onRequestClose, contentLabel = 'Book Now',
           ></textarea>
 
           <button type="submit" className="text-base cursor-pointer bg-[#3854B5] text-white h-[48px] w-[186px] p-2 rounded-full">
-            Send Message
+            {loading ? 'Loading...' : 'Send Message'}
           </button>
         </form>
       </div>

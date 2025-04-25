@@ -6,6 +6,9 @@ import heroImage from '../../assets/home/hero.svg'
 import heroImage1 from '../../assets/home/hero1.svg'
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import logo1 from '../../assets/home/logo/google.avif'
+import logo2 from '../../assets/home/logo/airbnb.avif'
+import logo3 from '../../assets/home/logo/logo.jpg'
 
 const Hero = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
@@ -14,7 +17,7 @@ const Hero = () => {
     <section className="bg-white px-4 py-8 sm:px-6 md:px-10 sm:py-10 md:py-20 ">
       <div className="max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
 
-        <div data-aos="zoom-in" className="flex-1 lg:max-w-[608px]">
+        <div className="flex-1 lg:max-w-[608px]">
           <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
             Bring Your Family&apos;s
             Happiness to Your
@@ -41,15 +44,36 @@ const Hero = () => {
                 Search
               </button>
             </div> */}
-            <div className="flex flex-col space-y-1 text-base text-start font-medium text-gray-800">
-              <h2 className="text-xl font-bold">Contact Us</h2>
-              <p>Phone: +44 7857 678064</p>
-              <p>Email: management@solidstayproperties.co.uk</p>
+
+            <div className='flex gap-4'>
+              <Image
+                src={logo1}
+                alt="House 1"
+                width={100}
+                height={20}
+                className="object-contain"
+              />
+
+              <Image
+                src={logo2}
+                alt="House 1"
+                width={103}
+                height={20}
+                className="object-contain"
+              />
+
+              <Image
+                src={logo3}
+                alt="House 1"
+                width={60}
+                height={20}
+                className="rounded-full object-contain"
+              />
             </div>
 
           </div>
 
-          <div ref={ref} className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">
+          <div data-aos="zoom-in" ref={ref} className="mt-6 sm:mt-10 flex flex-wrap gap-[40px]">
             <div>
               <p className="text-[32px] font-bold">{inView && <CountUp end={300} duration={4} />}+</p>
               <span className="text-sm text-[#666666]">Awards Winning</span>
@@ -65,7 +89,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in" className="hidden md:flex">
+        <div className="hidden md:flex">
           <Image
             src={heroImage}
             alt="Modern House"

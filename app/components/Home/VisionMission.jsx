@@ -1,25 +1,26 @@
 import Image from 'next/image';
 import vision from '../../assets/home/vision.svg';
 import mission from '../../assets/home/mission.svg';
+import Link from 'next/link';
 
 const VisionMission = () => {
   return (
     <section className="bg-[#FAFAFA] pb-[48px] px-4 sm:px-10 lg:px-0 ">
 
-      <div data-aos="zoom-in"  className='max-w-[1136px] mx-auto pt-4 pb-5'>
+      <div   className='max-w-[1136px] mx-auto pt-4 pb-5'>
         <div className='flex flex-col sm:flex-row justify-between items-center'>
           <div className='text-[#666666] text-base leading-[32px]'>
             Find the home that fits your lifestyle. Browse our featured listings today! 🏠✨
           </div>
 
-          <span className='w-full  cursor-pointer mt-2 sm:mt-0 sm:w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
+          <Link href={'/listing'} className='w-full  cursor-pointer mt-2 sm:mt-0 sm:w-[149px] h-[48px] flex justify-center items-center border rounded-full border-[#666666] text-[#333333]'>
             See More
-          </span>
+          </Link>
         </div>
       </div>
 
       <div  className="max-w-[1136px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:gap-12 items-start ">
-        <div data-aos="zoom-in"  className='sm:px-6 lg:px-10'>
+        <div   className='sm:px-6 lg:px-10'>
           <h2 className="text-[32px] font-bold text-[#333333] mb-4">Our Vision</h2>
 
           <Image
@@ -31,7 +32,7 @@ const VisionMission = () => {
           />
 
           <p className="text-[#666666] text-base leading-[32px] mb-6">
-            Propoke our vision is to create a world where every family finds their perfect
+          Solid Stay Properties our vision is to create a world where every family finds their perfect
             home—one that brings happiness, comfort, and a sense of belonging. We strive to
             redefine real estate by offering seamless experiences, trustworthy guidance, and
             exceptional properties that cater to every lifestyle. Whether it’s a first home,
@@ -47,7 +48,7 @@ const VisionMission = () => {
           />
         </div>
 
-        <div data-aos="zoom-in"  className="flex  sm:px-6 lg:px-10 flex-col justify-between h-full">
+        <div   className="flex  sm:px-6 lg:px-10 flex-col justify-between h-full">
           <Image
             src={mission}
             alt="Mission"

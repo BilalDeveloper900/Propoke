@@ -22,14 +22,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Propoke",
-  description: "Propoke",
+  title: "solidstayproperties",
+  description: "solidstayproperties",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${nunito.variable} antialiased`}>
+    <html lang="en" suppressHydrationWarning={true}>
+      <body className={`${nunito.variable} antialiased`} suppressHydrationWarning={true}      >
         <Toaster position="top-center" reverseOrder={false} />
         <Header />
         <Navbar />

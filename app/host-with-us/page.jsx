@@ -23,7 +23,7 @@ const page = () => {
       <section className="bg-white  py-8 sm:px-6 md:px-10 sm:py-10 md:py-20 ">
         <div className="max-w-[1136px] mx-auto justify-between flex flex-col md:flex-row items-center gap-10">
 
-          <div data-aos="zoom-in" className="flex-1 lg:max-w-[608px]">
+          <div  className="flex-1 lg:max-w-[608px]">
             <h1 className=" text-[32px] sm:text-[40px] md:text-[56px] font-extrabold text-[#333333] sm:leading-[56px] md:leading-[72px]">
               Maximize Your Property Earnings with Expert Management
             </h1>
@@ -34,7 +34,7 @@ const page = () => {
           </div>
 
 
-          <div data-aos="zoom-in" className="hidden md:flex">
+          <div  className="hidden md:flex">
             <Image
               src={heroImage}
               alt="Modern House"
@@ -53,7 +53,7 @@ const page = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in" className='h-[300px] pt-10 flex justify-center items-center text-center flex-col'>
+        <div  className='h-[300px] pt-10 flex justify-center items-center text-center flex-col'>
           <h1 className=' mb-4 md:text-[56px] sm:text-[40px] text-[32px] sm:leading-[56px] md:leading-[72px] leading-[48px] font-bold'>Unlock Exclusive Hosting Features</h1>
 
           <p className='leading-[32px] max-w-[600px]'>Take the stress out of property management and maximize your rental income with our expert hosting solutions. From seamless guest bookings to property maintenance and revenue optimization.</p>

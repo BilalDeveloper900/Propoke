@@ -27,7 +27,7 @@ const steps = [
 const FeaturedServices = () => {
   return (
     <section className="bg-white px-4 sm:px-10 lg:px-0 py-10">
-      <div data-aos="zoom-in" className="max-w-[1136px] grid sm:grid-cols-2 mx-auto items-center mb-12">
+      <div  className="max-w-[1136px] grid sm:grid-cols-2 mx-auto items-center mb-12">
         <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4 max-w-[528px]">
           Featured Services
         </h2>
@@ -37,9 +37,9 @@ const FeaturedServices = () => {
         </p>
       </div>
 
-      <div  data-aos="zoom-in"  className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1136px] mx-auto">
+      <div    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1136px] mx-auto">
         {steps.map((step, index) => (
-          <div key={index} data-aos="zoom-in" className="">
+          <div key={index}  className="">
             <div className="sm:flex block">
               <div className="w-[56px] h-[56px] rounded-full bg-black text-white font-bold text-center flex items-center justify-center mb-4">
                 {step.number}
@@ -51,7 +51,7 @@ const FeaturedServices = () => {
         ))}
       </div>
 
-      <div data-aos="zoom-in" className='max-w-[1136px] mx-auto py-[80px] '>
+      <div  className='max-w-[1136px] mx-auto py-[80px] '>
         <Image
           src={serviceImage}
           alt="Modern House"

@@ -27,13 +27,13 @@ const WhyChooseUs = () => {
             Why Choose Us for Your House Needs?
           </h2>
           <p className="text-[#666666] text-base leading-[32px]">
-            At Propoke Real Estate, we make finding your dream home easy, transparent, and hassle-free. Whether you're buying, selling, or investing, we provide expert guidance and high-quality listings to match your needs.
+            At Solid Stay Properties, we make finding your dream home easy, transparent, and hassle-free. Whether you're buying, selling, or investing, we provide expert guidance and high-quality listings to match your needs.
           </p>
 
           {/* Feature Cards */}
           <div className="mt-10">
             {features.map((feature, index) => (
-              <div key={index} data-aos="zoom-in" className="flex flex-col sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
+              <div key={index}  className="flex flex-col sm:flex-row sm:p-4 bg-white rounded-xl hover:shadow-sm my-1 items-start">
                 <div className=" mr-4 mb-4 mt-4 sm:mt-0" >
                   <BsCheckCircleFill className='' color='black' fontSize={40} />
                 </div>
@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
 
-        <div data-aos="zoom-in"  className="relative justify-center hidden lg:flex">
+        <div   className="relative justify-center hidden lg:flex">
           <div className="w-[90%] sm:ml-auto rounded-xl overflow-hidden shadow-lg">
             <Image
               src={whyus2}

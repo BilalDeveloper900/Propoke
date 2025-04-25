@@ -32,7 +32,7 @@ const AgentList = () => {
     return (
         <div>
             <div>
-                <div data-aos="zoom-in" className="max-w-[1136px] grid sm:grid-cols-2 mx-auto items-center my-20">
+                <div  className="max-w-[1136px] flex justify-center flex-col mx-auto items-center my-20">
                     <h2 className="text-[32px] md:text-[40px] font-bold text-[#333333] mb-4 max-w-[528px]">
                         Our Agent List
                     </h2>
