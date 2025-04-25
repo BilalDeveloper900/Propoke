@@ -33,17 +33,6 @@ const Hero = () => {
           </p>
 
           <div className=" mt-6 sm:mt-[40px]">
-            {/* <div className="flex items-center bg-[#FAFAFA] rounded-full pl-4 p-2 w-full md:max-w-[608px]">
-              <FiSearch className="text-[#666666] text-lg" fontSize={16} />
-              <input
-                type="text"
-                placeholder="Search Here"
-                className="flex-grow pl-2 px-4 py-2 outline-none text-sm w-full bg-transparent"
-              />
-              <button className="bg-[#3854B5] hover:bg-[#3853b5ce] text-white w-[120px] sm:w-[130px] h-[48px] flex justify-center items-center rounded-full font-semibold">
-                Search
-              </button>
-            </div> */}
 
             <div className='flex gap-4'>
               <Image
