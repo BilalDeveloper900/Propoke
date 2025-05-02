@@ -2,12 +2,11 @@
 import React, { useEffect, useState } from 'react';
 import { IoClose } from "react-icons/io5";
 import { toast } from 'react-hot-toast';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 import propertyService from '../api/propertyService';
 import bookingService from '../api/bookingService';
 
 const page = () => {
-    const searchParams = useSearchParams();
     const router = useRouter();
     const [loading, setLoading] = useState(false)
 
